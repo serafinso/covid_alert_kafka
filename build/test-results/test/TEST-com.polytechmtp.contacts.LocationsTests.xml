@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polytechmtp.contacts.LocationsTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-11-25T21:20:14" hostname="macbook-pro-de-solene.home" time="2.143">
+  <properties/>
+  <testcase name="updateOne()" classname="com.polytechmtp.contacts.LocationsTests" time="1.68"/>
+  <testcase name="createlocation()" classname="com.polytechmtp.contacts.LocationsTests" time="0.118"/>
+  <testcase name="testList()" classname="com.polytechmtp.contacts.LocationsTests" time="0.173"/>
+  <testcase name="deleteLocation()" classname="com.polytechmtp.contacts.LocationsTests" time="0.063"/>
+  <testcase name="testGetOne()" classname="com.polytechmtp.contacts.LocationsTests" time="0.099"/>
+  <system-out><![CDATA[Passe dans le setup
+22:20:15.520 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 5 mappings in <unknown>
+22:20:15.819 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+22:20:15.866 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+22:20:15.898 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+22:20:15.898 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+22:20:15.901 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+22:20:15.902 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+22:20:15.903 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@546bee46
+22:20:15.904 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@207492a0
+22:20:15.905 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+22:20:15.905 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 7 ms
+{ "latitude":1, "longitude":1, "location_date":904255200000 }
+22:20:15.976 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - PUT "/locations/1", parameters={}
+22:20:15.980 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.polytechmtp.kafka.controllers.LocationsController#update(Long)
+22:20:16.064 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+22:20:16.065 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Nothing to write: null body
+22:20:16.067 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /locations/1
+       Parameters = {}
+          Headers = [Content-Type:"application/json", Accept:"application/json", Content-Length:"61"]
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.polytechmtp.kafka.controllers.LocationsController
+           Method = com.polytechmtp.kafka.controllers.LocationsController#update(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Passe dans le setup
+22:20:16.134 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 5 mappings in <unknown>
+22:20:16.139 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+22:20:16.143 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+22:20:16.144 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+22:20:16.144 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+22:20:16.144 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+22:20:16.145 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+22:20:16.145 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5fd0a911
+22:20:16.145 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@24a97e7
+22:20:16.145 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+22:20:16.146 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 2 ms
+{ "latitude":1, "longitude":1, "location_date":904255200000 }
+22:20:16.148 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - POST "/locations", parameters={}
+22:20:16.149 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.polytechmtp.kafka.controllers.LocationsController#create(Location)
+22:20:16.198 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json" to [com.polytechmtp.kafka.models.Location@7c3cabfc]
+22:20:16.214 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 201 CREATED
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /locations
+       Parameters = {}
+          Headers = [Content-Type:"application/json", Accept:"application/json", Content-Length:"61"]
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.polytechmtp.kafka.controllers.LocationsController
+           Method = com.polytechmtp.kafka.controllers.LocationsController#create(Location)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Passe dans le setup
+22:20:16.247 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 5 mappings in <unknown>
+22:20:16.252 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+22:20:16.256 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+22:20:16.256 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+22:20:16.257 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+22:20:16.257 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+22:20:16.257 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+22:20:16.258 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3a21139a
+22:20:16.258 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6e856de4
+22:20:16.258 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+22:20:16.259 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 2 ms
+22:20:16.260 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - GET "/locations", parameters={}
+22:20:16.261 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.polytechmtp.kafka.controllers.LocationsController#list()
+22:20:16.267 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+22:20:16.268 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [[com.polytechmtp.kafka.models.Location@4bea017b, com.polytechmtp.kafka.models.Location@d45cd1b]]
+22:20:16.281 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /locations
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.polytechmtp.kafka.controllers.LocationsController
+           Method = com.polytechmtp.kafka.controllers.LocationsController#list()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"location_id":0,"latitude":0,"longitude":0,"location_date":null},{"location_id":0,"latitude":0,"longitude":0,"location_date":null}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+22:20:16.397 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+Passe dans le setup
+22:20:16.419 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 5 mappings in <unknown>
+22:20:16.426 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+22:20:16.431 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+22:20:16.432 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+22:20:16.433 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+22:20:16.433 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+22:20:16.434 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+22:20:16.435 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6e332ce3
+22:20:16.435 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@73548bad
+22:20:16.435 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+22:20:16.436 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 3 ms
+22:20:16.438 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - DELETE "/locations/1", parameters={}
+22:20:16.439 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.polytechmtp.kafka.controllers.LocationsController#delete(Long)
+22:20:16.442 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+22:20:16.442 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Nothing to write: null body
+22:20:16.447 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /locations/1
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.polytechmtp.kafka.controllers.LocationsController
+           Method = com.polytechmtp.kafka.controllers.LocationsController#delete(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Passe dans le setup
+22:20:16.483 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 5 mappings in <unknown>
+22:20:16.489 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+22:20:16.496 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+22:20:16.498 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+22:20:16.498 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+22:20:16.499 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+22:20:16.499 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+22:20:16.499 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@506e52fe
+22:20:16.499 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@56260a1b
+22:20:16.500 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+22:20:16.500 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 2 ms
+22:20:16.503 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - GET "/locations/1", parameters={}
+22:20:16.507 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.polytechmtp.kafka.controllers.LocationsController#get(Long)
+22:20:16.510 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+22:20:16.511 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [com.polytechmtp.kafka.models.Location@70892e37]
+22:20:16.517 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /locations/1
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.polytechmtp.kafka.controllers.LocationsController
+           Method = com.polytechmtp.kafka.controllers.LocationsController#get(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"location_id":1,"latitude":1,"longitude":1,"location_date":904255200000}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+22:20:16.563 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:20:16.566 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:20:16.568 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:20:16.569 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $[*]
+22:20:16.570 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $[*]
+22:20:16.571 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $[*]
+22:20:16.572 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['location_id']
+22:20:16.572 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['latitude']
+22:20:16.573 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['longitude']
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

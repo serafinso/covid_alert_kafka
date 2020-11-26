@@ -1,0 +1,23 @@
+com/polytechmtp/kafka/repositories/UserLocationRepository.java
+ com.polytechmtp.kafka.repositories.UserLocationRepository
+com/polytechmtp/kafka/controllers/KafkaController.java
+ com.polytechmtp.kafka.controllers.KafkaController
+com/polytechmtp/kafka/repositories/LocationRepository.java
+ com.polytechmtp.kafka.repositories.LocationRepository
+com/polytechmtp/kafka/models/Location.java
+ com.polytechmtp.kafka.models.Location
+com/polytechmtp/kafka/controllers/LocationsController.java
+ com.polytechmtp.kafka.controllers.LocationsController
+com/polytechmtp/kafka/kafka/Test.java
+ com.polytechmtp.kafka.kafka.Test
+com/polytechmtp/kafka/kafka/KafkaProducer.java
+ com.polytechmtp.kafka.kafka.KafkaProducer
+com/polytechmtp/kafka/Kafka.java
+ com.polytechmtp.kafka.Kafka
+ com.polytechmtp.kafka.Kafka$1
+com/polytechmtp/kafka/models/LocationUserFront.java
+ com.polytechmtp.kafka.models.LocationUserFront
+com/polytechmtp/kafka/models/UserLocation.java
+ com.polytechmtp.kafka.models.UserLocation
+com/polytechmtp/kafka/kafka/KafkaConsumer.java
+ com.polytechmtp.kafka.kafka.KafkaConsumer

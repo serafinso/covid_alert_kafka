@@ -1,0 +1,4 @@
+com/polytechmtp/contacts/KafkaApplicationTest.java
+ com.polytechmtp.contacts.KafkaApplicationTest
+com/polytechmtp/contacts/LocationsTest.java
+ com.polytechmtp.contacts.LocationsTests
